@@ -1,2 +1,4 @@
 These files are all hosted on jsdeliver via github
 https://www.jsdelivr.com/github
+
+Any changes to /kanbanize.cc/assets/dist just copy the folder here because Git currently doesn't support symlinks. Or perhaps... just doesn't work for me.
