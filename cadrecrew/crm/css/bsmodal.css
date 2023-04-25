@@ -1,0 +1,438 @@
+.modal-open {
+    overflow: hidden
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out, -o-transform .3s ease-out
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.modal-header .close {
+    margin-top: -2px;
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px
+}
+
+.modal-footer .btn-group .btn + .btn {
+    margin-left: -1px
+}
+
+.modal-footer .btn-block + .btn-block {
+    margin-left: 0
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto
+    }
+
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+
+    .modal-sm {
+        width: 300px
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px
+    }
+}
+
+.flexed {
+    display: flex;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.form-group label,
+.form-group input {
+    display: block;
+    width: 100%;
+}
+
+.form-group input {
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.modal .divider {
+    margin: 10px;
+}
+
+.modal hr {
+    opacity: .3
+}
+
+.modal .modal-body button {
+    background:#6c10ff;
+    border:none;
+    color: #ffffff;
+    padding: 10px 20px;
+    min-width: 80px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+.modal .modal-body button:hover {
+    cursor: pointer;
+    background:#632eb7;
+}
+.modal .modal-body button[disabled] {
+    background: #eaeaea;
+    color: #b4b4b4
+}
+.modal .modal-body .form-group {
+    margin: 15px 0;
+}
+
+.modal .modal-body input {
+    height: 40px;
+}
+.modal .modal-body textarea,
+.modal .modal-body input {
+    width: 100%;
+    border: 1px solid #b5b5b5;
+    padding: 10px;
+}
+
+
+
+.modal-footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.modal-footer button.cancel {
+    background: #e1e1e1;
+    border-bottom: 2px solid #cecece
+}
+.modal-footer button.cancel:hover{
+    background: #d0d0d0;
+}
+
+.modal-footer button.accept {
+    background: #22ab71;
+    color: #ffffff;
+    border-bottom: 2px solid #1f9161
+}
+.modal-footer button.accept:hover{
+    background: #219d69;
+}
+
+
+
+.sign-type {
+    position: relative;
+    top: 1px;
+}
+.sign-type p {
+    padding: 5px;
+    margin: 0;
+    display: block;
+    background: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sign-type p.active {
+    background: #ffffff;    
+    border-bottom: white;
+}
+
+#preview {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+#preview .signature {
+    text-align: center;
+    font-size: 60px;
+    color: #616161;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.machine {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.machine img {
+    width:100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+}
+
+
+.signature-modal {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: #30404c96
+}
+
+.signature-modal .main {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 3px 3px #393939;
+    margin-top: 15%;
+    border-radius: 3px;
+    position: relative;
+    transition: .5s
+}
+
+@media(max-width: 1024px) {
+    .signature-modal .main {
+        width: 90%;
+        margin-top: 25%;
+    }
+}
+
+
+
+.signature-modal .heading-text {
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.signature-modal .close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 30px;
+    color: #a9a9a9
+}
+
+.signature-modal .body {
+    padding: 20px;
+}
+
+
+.signature-modal .body .sub-headings {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.signature-modal .body .sub-headings small {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    color: #959595
+}
+
+.signature-modal .tabs  {
+    width: 100%;
+}
+
+.signature-modal .tabs .titles {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.signature-modal .tabs .titles .right {
+    margin-left: auto;
+    width: 150px;
+    display: flex;
+}
+
+.signature-modal .tabs .titles .right div {
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #979797;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    top: 1px;
+    background: #e1e1e1
+}
+.signature-modal .tabs .titles .right .active {
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
+}
+
+.signature-modal .tabs .container .type,
+.signature-modal .tabs .container .draw {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.signature-modal .tabs .container .form-group {
+    padding-right: 25px
+}
+
+.signature-modal .tabs .container .form-group label {
+    margin-bottom: 5px;
+    color: #849595;
+    display: block;
+}
+
+.signature-modal .tabs .container .form-group:last-child {
+    padding-right: 0;
+}
+
+.signature-modal .tabs .container input,
+.signature-modal .tabs .container select {
+    width: 100%;
+    display: block;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    box-shadow: inset 0 3px 3px #e1e1e1;
+}
+
+.signature-modal .tabs .container .preview {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    user-select: none;
+}
+
+.signature-modal .tabs .container .preview .fullname {
+    width: 60%;
+    margin-right: 30px;
+}
+.signature-modal .tabs .container .preview .initials {
+    width: 35%;
+}
+
+.signature-modal .tabs .container .preview .fullname,
+.signature-modal .tabs .container .preview .initials {
+    padding: 50px 20px;
+    border: 1px solid #159a75;
+    text-align: center;
+    font-size: 60px;
+    color: #616161;
+}

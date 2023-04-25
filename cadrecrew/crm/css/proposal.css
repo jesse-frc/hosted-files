@@ -1,0 +1,896 @@
+@font-face {
+    src: url("/assets/proposal/fonts/Adinda_Melia.otf");
+    font-family: signature1;
+}
+@font-face {
+    src: url("/assets/proposal/fonts/Aerotis.otf");
+    font-family: signature2;
+}
+@font-face {
+    src: url("/assets/proposal/fonts/Airin.ttf");
+    font-family: signature3;
+}
+@font-face {
+    src: url("/assets/proposal/fonts/Alexandroupoli.ttf");
+    font-family: signature4;
+}
+@font-face {
+    src: url("/assets/proposal/fonts/Allison_tessa_oblique.ttf");
+    font-family: signature5;
+}
+@font-face {
+    src: url("/assets/proposal/fonts/mayqueen.ttf");
+    font-family: signature6;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #373a3c;
+    overflow-x: hidden;
+    background: #efefef;
+    font-size:  14px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: #dadada;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background: #9a9a9a; 
+    border-radius: 15px;
+}
+
+
+
+.sign_accept {
+    padding: 15px 15px;
+    font-size: 13px;
+    border:none;
+    box-shadow: 0 3px 5px #e1e1e1;
+    background: #1ab06f;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    border-bottom: 3px solid #20905f;
+    margin: 50px 0;
+    color: #bfffdc;
+    font-style: italic;
+}
+
+.sign_accept .flexed {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sign_accept .flexed img {
+    width:35px;
+    height:35px;
+}
+
+.sign_accept:hover {
+    background: #1d9963;
+    border-bottom: 3px solid #156944
+}
+
+.sign_accept small {
+    display: block;
+    min-width: 150px;
+    color: #e9e9e9;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.navigation-sm {
+    display: none;
+}
+
+.sidebar {
+    width: 200px !important;
+    background: white;
+    padding-top: 15%;
+    min-width: 200px;
+    box-shadow: 0 3px 5px #b9b9b9;
+    position: relative;
+    max-height: 100%;
+}
+
+.sidebar ul{
+    padding: 0;
+    position: fixed;
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 13px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: .5s;
+    margin-bottom: 2px;
+}
+
+.sidebar ul li.active > a,
+.sidebar ul li:hover > a {
+    background: #243954;
+    color: #ffffff
+}
+
+.main {
+    width: 100%;
+}
+
+.main .pdf {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto !important;
+}
+
+.main .pdf .heading-text {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+}
+
+@media(max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navigator {
+        padding: 0 50px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+        background: #ffffff;
+        height: 60px;
+        box-shadow: 0 0px 3px #909090;
+    }
+    .navigation-sm {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .navigator {
+        padding: 0;
+    }
+    .navigation-sm {
+        width: 95% !important;
+    }
+}
+
+
+
+/* ALL PAGES */
+.page {
+    background: white;
+    width: 100%;
+    height: 960px;
+    position: relative;
+    border: 1px solid #c8c8c8;
+    padding: 50px 0;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
+}
+@media(max-width: 768px) {
+    .main {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .main .pdf {
+        width: 95%;
+        padding: 0;
+    }
+}
+
+
+
+.header,
+.footer {
+    height:50px;
+    background: url('/assets/proposal/img/pdf/pdf-header.png');
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.header {
+    top: 0;
+}
+.footer {
+    bottom: 0;
+}
+.page .body {
+    padding: 100px;
+}
+.page .title {
+    font-size: 30px;
+    text-align: center;
+}
+.footer .footer-label {
+    margin-left:auto;
+    text-align:center;
+    color:#fff;
+    padding: 15px;
+    width: 200px;
+    background:#243954;
+    margin-right: 50px;
+    height: 50px;
+}
+
+@media(max-width: 575px) {
+    .footer .footer-label {
+        margin: auto;
+    }
+}
+
+/* Page 1 */
+.page img.logo  {
+    display: block;
+    width: 300px !important;
+    margin: auto;
+    padding-top: 200px;
+}
+.page .issuer {
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    color: #ffffff;
+}
+
+@media(max-width: 768px) {
+    .page .issuer {
+        position: relative;
+        width: 90%;
+        color: #ffffff;
+        margin: auto;
+        display: block;
+        left: 0;
+        top: 25%;
+    }
+}
+
+.page .issuer hr {
+    opacity: .1;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.page .issuer .proposal-name {
+    font-size: 20px;
+}
+
+
+/* Testimonials */
+.page .clients-img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+/* Discovery */
+@media(max-width: 575px) {
+    .discovery .body {
+        padding: 20px;
+    }
+}
+
+/* Recommended Equipment */
+
+.page.recommended-equipment .body .copier{
+    width: 100%;
+}
+
+.page.recommended-equipment .body .copier td,
+.page.recommended-equipment .body .copier td img {
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.page.recommended-equipment .body .copier .video {
+    width: 500px;
+    height: 280px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+.page.recommended-equipment .visible-xs {
+    display: none;
+}
+.page.recommended-equipment .body {
+    padding: 0px 10px;
+}
+.page.recommended-equipment .body ul {
+    padding: 0 15px;
+}
+@media(max-width:768px) {
+    .page.recommended-equipment .body ul {
+        padding: 0 25px;
+    }
+    .page.recommended-equipment .body .copier .video {
+        width: 80%;
+        height: 210px;
+    }
+    .page.recommended-equipment .visible-xs {
+        display: table-row;
+    }
+    .page.recommended-equipment .visible-xs .image {
+        width: 250px;
+        height: 230px;
+        background-repeat: no-repeat !important;
+        background-size: 250px 250px !important;
+        position: relative;
+        top: -40px;
+        display: block !important;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    .page.recommended-equipment .hidden-xs {
+        display: none;
+    }
+}
+
+
+/* Key Deliverables */
+.page.deliverables .title-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.page.deliverables .title-wrap p {
+    position:relative;
+    left:100px;
+    top: 90px;
+}
+.page.deliverables .deliv-body {
+    padding:100px;
+    padding-top:0
+}
+@media(max-width: 768px) {
+    .page.deliverables .tablet-photo {
+        display:none;
+    }
+    .page.deliverables .title-wrap p {
+        top: 0;
+    }
+    .page.deliverables .deliv-body {
+        padding:50px;
+    }
+}
+@media(max-width: 575px) {
+    .page.deliverables .tablet-photo {
+        display:none;
+    }
+    .page.deliverables .title-wrap p {
+        top: 0;
+    }
+    .page.deliverables .deliv-body {
+        padding:20px;
+    }
+}
+
+/* Service & Support */
+.page.service_support .svc-support-body {
+    float:left;
+    width:500px;
+    padding-left:100px;
+    padding-top: 50px;
+}
+.page.service_support .svc-support-body ul li {
+    padding-bottom:20px;
+}
+.page.service_support .svc-support-body .title {
+    margin-left: 5%;
+}
+.page.service_support .svc-support-img-right {
+    float:right;
+    margin-top:100px;
+    height:auto;
+    width:150px;
+}
+@media(max-width: 768px) {
+    .page.service_support .svc-support-body {
+        padding: 20px !important;
+        float: none;
+        width: 100%;
+        margin: auto;
+        width: 85%;
+    }
+    .page.service_support .svc-support-body ul {
+        margin: 0;
+        padding: 0;
+    }
+    .page.service_support .svc-support-img-right {
+        display: none;
+    }
+    .page.service_support .svc-support-body .title {
+        margin-left: 0%;
+    }
+}
+
+@media(max-width: 575px) {
+    .service_support img:not(.svc-support-img-right) {
+        width: 220px;
+    }
+}
+
+
+/* The Lease Process */
+
+.page.lease-process .title {
+    margin: 0;
+    margin-top: 0px
+}
+.page.lease-process .body img {
+    max-width: 80%;
+}
+
+@media(max-width: 768px) {
+    .page.lease-process .body {
+        padding: 20px;
+    }
+    .page.lease-process .body img {
+        width: 80%;
+    }
+}
+
+
+/* Installation and Setup */
+@media(max-width: 768px) {
+    .page.install-setup .body {
+        padding: 20px;
+    }
+}
+
+
+/* Cost Summary */
+.page.cost-summary .body {
+    padding: 50px;
+}
+
+.page.cost-summary .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.page.cost-summary .table th {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+    background: #485784;
+    border: 2px solid #404e7a;
+    padding: 10px; 
+}
+.page.cost-summary .table td {
+    padding: 15px 15px;
+    font-size: 14px;
+    border: 1px solid #e1e1e1;
+}
+.page.cost-summary .table td.copier-name {
+    padding: 0;
+    padding-left: 5px;
+}
+.page.cost-summary .table td ul {
+    padding: 0 20px;
+    margin: 0;
+}
+@media(max-width: 768px) {
+    .page.cost-summary .body {
+        padding: 20px;
+        height:925px;
+    }
+}
+@media(max-width: 575px) {
+    .page.cost-summary .body .hidden-xs{
+        display: none;
+    }
+}
+
+
+/* Specifications sheet */
+.page.specs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .page.specs img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+}
+
+
+/* About Us */
+.page.about-us .body {
+    padding:50px;
+    color:#ffffff;
+    display: block;
+}
+
+
+.product-image {
+    display:block;
+    height: 250px;
+    width:250px;
+    background-size: 380px 380px !important;
+    background-position: center !important;
+}
+
+
+
+/* Autostretch height for specific pages */
+.page.cost-summary {
+    min-height:  960px;
+}
+
+.page.cost-summary .table-responsive {
+    overflow: auto;
+}
+
+.page.cost-summary .table-responsive::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 20px;
+}
+ 
+.page.cost-summary .table-responsive::-webkit-scrollbar-track {
+    background: #ddd;
+}
+ 
+.page.cost-summary .table-responsive::-webkit-scrollbar-thumb {
+    background: #9f9f9f; 
+    border-radius: 50px;
+}
+
+.page.specs,
+.page.testimonials,
+.page.cost-summary,
+.page.recommended-equipment {
+    height: auto !important;
+    width: 100% !important;
+    padding-bottom: 100px;
+}
+
+
+
+.footer-buttons {
+    text-align: right;
+    width: 100%;
+    padding: 20px 15px;
+    background: #eeeeee;
+    box-sizing: border-box;
+}
+
+.footer-buttons button {
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer-buttons button.cancel {
+    background: #ffffff;
+    box-shadow: 0 3px 3px #d2d2d2;
+}
+
+.footer-buttons button.accept {
+    background: #29b665;
+    background: -webkit-linear-gradient(#3ecd7a,#2ec36d,#3aae6b);
+    color: #fff;
+    box-shadow: 0 3px 3px #d2d2d2;
+}
+.footer-buttons button.cancel:hover{
+    background: #f0f0f0;
+}
+.footer-buttons button.accept:hover{
+    background: #219552;
+}
+
+.accept-btn .info {
+    height: 50px;
+    padding: 15px 20px;
+    padding-top: 13px;
+    font-size: 16px;
+    border:none;
+    width: 170px;
+    text-align:center;
+    display: inline-block;
+    box-sizing: border-box;
+    user-select: none;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+.accept-btn .proposal-declined-text {
+    cursor: none;
+    color: #ffffff;
+    border: 1px solid #ff5680;
+    box-shadow: 0 3px 5px #e1e1e1;
+    background: none;
+    color: #ff5680;
+}
+
+.accept-btn .proposal-success-text {
+    cursor: default;
+    background: #f1fff8 !important;
+    color: #37b575;
+    border: 1px solid #37b575;
+    background: none;
+    color: #37b575;
+}
+
+@media(max-width: 768px) {
+    .footer-sign {
+        font-size: 12px;
+    }
+    .footer-sign .client {
+        position: relative;
+        top: -5px;
+        padding: 0;
+    }
+    .footer-sign .details button {
+        height: 40px !important;
+        padding: 10px;
+    }
+    .footer-sign .offer .hidden-xs {
+        display: none;
+    }
+    .footer-sign .offer p b {
+        font-size: 16px;
+        text-align: center;
+    }    
+    .footer-sign .accept-btn .proposal-success-text {
+        width: 100px;
+        padding: 7px;
+        height: 40px;
+        margin: 0;
+    }
+}
+
+.font-picker {
+    display: block;
+    position: absolute;
+    right: 0;
+    border: 1px solid #e1e1e1;
+    width: 200px;
+    text-align: center;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.font-picker .label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    height: 23px;
+    max-height: 23px;
+    overflow: hidden;
+}
+
+.font-picker .wrapper {
+    position: relative;
+    border: none;
+    display: block;
+}
+
+.font-picker .wrapper .item {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 3px;
+    max-height: 50px;
+    height: 24px;
+    max-height: 24px;
+}
+
+.font-picker .wrapper .item:last-child {
+    border-bottom: none;
+}
+
+#signature  {
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-signature {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.footer-signature .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer-signature .subject {
+    font-size: 13px;
+}
+.footer-signature .footer-btn {
+    height: 50px;
+    vertical-align: middle;
+    padding-top: 15px;
+    width: 120px;
+    text-align: center;
+}
+.footer-signature .footer-btn button {
+    display: inline-block;
+    background: #ffffff;
+    border: none;
+    padding: 0 10px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 5px;
+    height: 40px;
+    transition: .4s;
+    border-radius: 3px;
+}
+.footer-signature .footer-btn button:hover {
+    background: #e6e6e6
+}
+.footer-signature tr td {
+    vertical-align: middle !important;
+    padding:0px 10px;
+    width: 100%;
+}
+.footer-signature .info {
+    font-style: italic;
+    padding: 10px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 2px #d1d1d1;
+    min-width: 90px !important;
+    display: inline-block;
+    text-align: center;
+}
+.footer-signature .info.proposal-declined-text {
+    border: 1px solid #ec5e6a;
+    color: #ec5e6a;
+}
+.footer-signature .info.proposal-accepted-text {
+    border: 1px solid #7fcea6;
+    color: #7fcea6;
+    background: #f0fff8;
+}
+.footer-signature .decline-accept-btn {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.footer-signature .decline-accept-btn button {
+    display: inline-block;
+    padding: 5px;
+    min-width: 120px;
+    height: 50px;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+.footer-signature .decline-accept-btn button.decline {
+    margin-right: 10px;
+    border: none;
+}
+.footer-signature .decline-accept-btn button.decline:hover {
+    background: #d6d6d6;
+}
+.footer-signature .decline-accept-btn button.accept {
+    margin-right: 10px;
+    border: none;
+    background: #1ab06f;
+    color: #ffffff;
+}
+.footer-signature .decline-accept-btn button.accept:hover {
+    background: #19925d;
+}
+@media(max-width: 1024px) {
+    .footer-signature {
+        box-shadow: 0 -1px 5px #d1d1d1;
+    }
+}
+
+@media(max-width: 575px) {
+    .proposal-contact {
+        display: none;
+    }
+    .footer-signature .decline-accept-btn button {
+        min-width: 110px;
+        height: 50px;
+        position: relative;
+        top: 8px;
+        cursor: pointer;
+        transition: .4s
+    }
+}
+
+.page.discovery {
+    height: auto;
+}
+.recommended-machine {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 20px;
+}
+.recommended-machine img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:768px) {
+    .recommended-machine {
+        margin: auto;
+    }
+}
