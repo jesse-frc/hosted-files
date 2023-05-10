@@ -410,3 +410,19 @@ table.main-nav td.company-name {
     background: #03a9f4;
     color: #ffffff;
 }
+
+/* RESETS */
+input.form-control,
+select.form-control {
+    border-radius: 0;
+    border: none !important;
+    box-shadow: 0 1px 3px #cfcfcf !important;
+}
+input.form-control:focus,
+select.form-control:focus {
+    border: 1px solid #939191 !important
+}
+.modal .modal-content,
+.modal .modal-header {
+    border-radius: 0 !important
+}
