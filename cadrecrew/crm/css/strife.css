@@ -426,3 +426,13 @@ select.form-control:focus {
 .modal .modal-header {
     border-radius: 0 !important
 }
+
+.datepicker-readonly-input[readonly] {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.datepicker-itself {
+    position: absolute;
+    z-index: 100
+}
