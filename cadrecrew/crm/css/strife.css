@@ -401,7 +401,6 @@ table.main-nav td.company-name {
     overflow-y: auto;
     box-shadow: 0 3px 5px #d1d1d1;
 }
-
 .typeahead .typeahead-suggestions li {
     padding: 10px 15px;
     cursor: pointer
@@ -409,6 +408,23 @@ table.main-nav td.company-name {
 .typeahead .typeahead-suggestions li:hover {
     background: #03a9f4;
     color: #ffffff;
+}
+.typeahead .remove-btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size:22px;
+    color: #787878;
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+.typeahead .remove-btn:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+    font-weight: bold
 }
 
 /* RESETS */
