@@ -51,4 +51,4 @@ function ZeroFill(number, width = 6) {
     let pad = '0'.repeat(Math.max(0, width - numberOutput.length));
 
     return (number < 0 ? '-' : '') + pad + numberOutput;
-},
+}
