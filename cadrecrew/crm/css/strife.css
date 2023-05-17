@@ -509,7 +509,7 @@ table#dataTable thead .sorting_asc:after{
     cursor: not-allowed
 }
 
-table#proposals_table tbody tr.hoverable div.controls  {
+table tbody tr.hoverable div.controls  {
     display: none;
     width: fit-content;
     background: #ffffff;
@@ -518,12 +518,12 @@ table#proposals_table tbody tr.hoverable div.controls  {
     position: absolute;
     border-radius: 5px;
 }
-table#proposals_table tbody tr.hoverable div.controls a:first-child {
+table tbody tr.hoverable div.controls a:first-child {
     margin-right: 10px;
 }
-table#proposals_table tbody tr.hoverable div.controls a:last-child {
+table tbody tr.hoverable div.controls a:last-child {
     margin-left: 10px;
 }
-table#proposals_table tbody tr.hoverable:hover div.controls {
+table tbody tr.hoverable:hover div.controls {
     display: block
 }
