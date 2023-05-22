@@ -536,6 +536,7 @@ table tbody tr.hoverable:hover div.controls {
     z-index: 1000;
     bottom: 10px;
     background: transparent;
+    display: none;
 }
 .str-alert .str-alert-content {
     margin: auto;
