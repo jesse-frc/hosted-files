@@ -6,45 +6,6 @@
     justify-content: space-between;
 }
 
-/* Alert Box */
-.str-alert {
-    position: fixed;
-    width: 100%;
-    z-index: 3000;
-    bottom: 10px;
-    -webkit-animation: moveFromBottom .6s ease both;
-    -moz-animation: moveFromBottom .6s ease both;
-    animation: moveFromBottom .6s ease both;
-}
-.str-alert .str-alert-body {
-    width: 400px;
-    background: #151515;
-    margin: auto;
-    position: relative;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 14px;
-    box-shadow: 0 2px 12px #535353;
-    display: flex;
-    justify-content: space-between;
-    overflow-y: auto;
-}
-.str-alert .str-alert-body .message {
-    padding: 15px;
-}
-.str-alert .str-alert-body .close-btn {
-    font-size: 20px;
-    color: #ffffff;
-    cursor: pointer;
-    display: table-cell;
-    vertical-align: middle;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-}
 @-webkit-keyframes moveFromBottom {
     from { -webkit-transform: translateY(100%); }
 }
@@ -537,6 +498,9 @@ table tbody tr.hoverable:hover div.controls {
     bottom: 10px;
     background: transparent;
     display: none;
+    -webkit-animation: moveFromBottom .6s ease both;
+    -moz-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
 }
 .str-alert .str-alert-content {
     margin: auto;
