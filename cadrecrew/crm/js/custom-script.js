@@ -52,3 +52,16 @@ function ZeroFill(number, width = 6) {
 
     return (number < 0 ? '-' : '') + pad + numberOutput;
 }
+
+function StrAlert(content, duration = 5000) {
+    const alert = document.querySelector('.str-alert');
+    const inner = document.querySelector('.str-alert .str-alert-content:first-child div');
+
+    alert.style.display = "block";
+    inner.innerHTML = content;
+
+    setTimeout(() => {
+        alert.style.display = "none";
+        inner.innerHTML = "";
+    }, duration);
+}
