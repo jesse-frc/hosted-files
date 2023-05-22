@@ -527,3 +527,43 @@ table tbody tr.hoverable div.controls a:last-child {
 table tbody tr.hoverable:hover div.controls {
     display: block
 }
+
+
+
+/* Strife Snackbar */
+.str-alert {
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    background: transparent;
+}
+.str-alert .str-alert-content {
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+    background: #333333;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px #575757;
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+}
+.str-alert .str-alert-close {
+    text-align: center;
+    height: fit-content;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+}
+.str-alert .str-alert-close:hover {
+    background: #141313;
+    transform: rotate(360deg);
+    transition: .4s
+}
