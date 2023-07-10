@@ -96,7 +96,7 @@
 .str-modal .str-modal-body::-webkit-scrollbar {
     width:10px;
 }
- 
+
 .str-modal .str-modal-body::-webkit-scrollbar-track {
     background: #ffffff;
 }
@@ -448,12 +448,14 @@ table#dataTable thead .sorting_desc:after,
 table#dataTable thead .sorting_asc:after{
     top: 7px;
 }
-#wrapper input[type="search"] {
+#wrapper #destination_table_filter input[type="search"] {
     width: 180px !important;
     border-radius: 3px;
     border: none;
-    box-shadow: 0 1px 3px #909090;
     padding: 10px !important;
+    border: 1px solid #575757;
+    border-radius: 0;
+    margin-left: 5px !important;
 }
 #wrapper .paginate_button {
     padding: 7px 10px;
