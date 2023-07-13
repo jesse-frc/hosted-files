@@ -535,3 +535,16 @@ table tbody tr.hoverable:hover div.controls {
     transform: rotate(360deg);
     transition: .4s
 }
+
+/* Scroll bar reset */
+.pretty-scroll ::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 20px;
+}
+.pretty-scroll ::-webkit-scrollbar-track {
+    background: #ddd;
+}
+.pretty-scroll ::-webkit-scrollbar-thumb {
+    background: #9f9f9f;
+    border-radius: 50px;
+}
