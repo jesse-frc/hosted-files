@@ -457,17 +457,18 @@ table#dataTable thead .sorting_asc:after{
     border-radius: 0;
     margin-left: 5px !important;
 }
-#wrapper .paginate_button {
+
+.paginate_button {
     padding: 7px 10px;
     background: #0786ff;
     color: #ffffff;
-    cursor: pointer
+    cursor: pointer;
 }
-#wrapper .paginate_button:hover,
-#wrapper .paginate_button.current{
+.paginate_button:hover,
+.paginate_button.current{
     background: #0064c4
 }
-#wrapper .paginate_button.disabled {
+.paginate_button.disabled {
     background: #dadada;
     cursor: not-allowed
 }
