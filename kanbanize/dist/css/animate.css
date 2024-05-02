@@ -1492,34 +1492,6 @@
     animation-delay: 1s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.color-picker {
-    z-index: 100000;
-    top: 0
+.shepherd-modal-overlay-container {
+    z-index: 9999999999; /* Adjust this value as needed */
 }
